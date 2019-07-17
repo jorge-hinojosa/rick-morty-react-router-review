@@ -1,33 +1,97 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.app-header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  z-index: 10;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-nav {
+  width: 70vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+}
+.app-header-links-cont {
+  width: 18vw;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+.app-header-links-cont :hover {
+  color: darkgray;
+  cursor: pointer;
+}
+.app-header-links {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.chars-container {
+  width: 65vw;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15vh;
+}
+.char-card {
+  display: flex;
+  flex-direction: column;
+  transition: all .2s ease-in-out;
+}
+.char-card :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.char-link {
+  text-decoration: none;
+  color: black;
+}
+.char-img {
+  width: 10em;
+  border-radius: 100%;
+}
+.episode-container {
+  margin-top: 10vh;
+}
+.episode-card {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 15px; 
+}
+.curr-char-cont {
+  margin-top: 10vh;
+}
+.curr-char-img {
+  width: 15em;
+  border-radius: 100%;
 }
